@@ -1,5 +1,5 @@
 
-# 🐾 Bongo Cat Keypress Widget (macOS Compatible)
+# 🐾 Bongo Cat for Mac 🍎
 
 Inspired by the adorable **Bongo Cat** app on Steam, this lightweight Python-based version brings the same delightful experience to **macOS** — and even tracks your keypresses!
 
@@ -8,14 +8,15 @@ Inspired by the adorable **Bongo Cat** app on Steam, this lightweight Python-bas
 - 🐱 Bongo Cat that bops left and right with every keypress  
 - ⌨️ Tracks and displays total number of keypresses  
 - 🖼️ Custom images for idle, left tap, and right tap animations
-- 💻 Designed to work seamlessly on **macOS**
+- 💻 Designed to work on **macOS**
 
-## 🧰 Tech Stack
+## 📚 Libraries Used
 
 - `tkinter` – for GUI interface  
 - `Pillow (PIL)` – for image processing  
 - `pynput` – for global keyboard event listening  
-- `threading` – to run background keyboard listener without freezing the GUI
+- `threading` – to run background keyboard listener without freezing the GUI  
+- `pyinstaller` – for packaging the app into a standalone executable
 
 ## 📸 Preview
 
@@ -25,12 +26,12 @@ Inspired by the adorable **Bongo Cat** app on Steam, this lightweight Python-bas
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/yourusername/bongo-cat-mac.git
-cd bongo-cat-mac
+git clone https://github.com/Kyzuma/BongoCatMac.git
+cd BongoCatMac
 ```
 
 ### 2. Install Dependencies
-Make sure you have Python 3 installed, then run:
+Make sure you have Python3 installed, then run:
 ```bash
 pip3 install -r requirements.txt
 ```
@@ -43,7 +44,7 @@ You can design your own or find free Bongo Cat sprites online.
 
 ### 4. Run the App
 ```bash
-python bongocat.py
+python3 bongocat.py
 ```
 
 ## ⚙️ Customization
@@ -63,20 +64,27 @@ pyinstaller --onefile --windowed --name "Bongo Cat" --add-data "Images:Images" -
 ```
 
 - `--name` names the Application
-- `--windowed` hides the terminal on macOS/Windows.  
-- `--add-data` bundles the Images folder (colon `:` on macOS/Linux, semicolon `;` on Windows).
+- `--windowed` hides the terminal on macOS.  
+- `--add-data` bundles the Images folder
 
 After building, find your app inside the dist/ folder.
 
-⚠️ Note for macOS users: After building, you might need to grant Input Monitoring permission to your app for key tracking to work (see below).
+⚠️ Note: After building, you need to grant Input Monitoring permission to your app for key tracking to work.
 
-## 🙋 FAQ
+<img src="Images/permissions.png" alt="Input Permissions" width="300" />
 
-**Q: How do I make the icon show on my app?**  
-A: Provide a properly formatted `.icns` (macOS) or `.ico` (Windows) file and add `--icon=iconfile` when running PyInstaller.
+## 🚀 Future Improvements
+
+Planned enhancements for **Bongo Cat**:
+
+- 🎉 **Special Effects** every ??? key presses
+- 🐱 **New Avatars** – support for different colored cats and other animals.
+- 🏅 **Record Personal Best** – track and display your highest number of key presses in a day.
+
+## 📄 License
+MIT License — Free to use, modify, and share.
 
 ## ✨ Acknowledgements
 
 - Original idea inspired by [Bongo Cat on Steam](https://store.steampowered.com/app/3419430/Bongo_Cat/)  
 - Sprite credit: https://imgur.com/a/bongo-cat-diy-0o31WpY
-
