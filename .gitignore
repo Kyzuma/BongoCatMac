@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+
+# Virtual environment
+venv/
+env/
+
+# PyInstaller build folders
+build/
+dist/
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment settings
+.env
+*.env
+
+# VSCode settings
+.vscode/
+
+# macOS app bundle from PyInstaller
+*.app/
+
+# Python egg info
+*.egg-info/
