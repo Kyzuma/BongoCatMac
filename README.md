@@ -20,7 +20,7 @@ Inspired by the adorable **Bongo Cat** app on Steam, this lightweight Python-bas
 
 ## 📸 Preview
 
-<img src="Images/preview.gif" alt="Bongo Cat in action" width="150" />
+<img src="Images/README/preview.gif" alt="Bongo Cat in action" width="150" />
 
 ## 🚀 Getting Started
 
@@ -49,9 +49,9 @@ python3 bongocat.py
 
 ## ⚙️ Customization
 
-- **Widget size:** Set to `200x150`, but you can change it in this line:
+- **Widget size:** Set to `220x220`, but you can change it in this line:
   ```python
-  self.top.geometry("200x150")
+  self.top.geometry("220x220")
   ```
 - **Placement:** Automatically anchored to bottom-right, but customizable in `place_window_bottom_right()`.
 
@@ -71,14 +71,13 @@ After building, find your app inside the dist/ folder.
 
 ⚠️ Note: After building, you need to grant Input Monitoring permission to your app for key tracking to work.
 
-<img src="Images/permissions.png" alt="Input Permissions" width="300" />
+<img src="Images/README/permissions.png" alt="Input Permissions" width="300" />
 
 ## 🚀 Future Improvements
 
 Planned enhancements for **Bongo Cat**:
 
 - 🎉 **Special Effects** every ??? key presses
-- 🐱 **New Avatars** – support for different colored cats and other animals.
 - 🏅 **Record Personal Best** – track and display your highest number of key presses in a day.
 
 ## 📄 License
